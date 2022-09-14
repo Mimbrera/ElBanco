@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <title>El banco | Inicio</title>
+</head>
+
+<body>
+    <div class="responsive">
+        <header>
+            <div>
+                <img id="imgBBVA" src="../img/BBVA-logo.png" alt="BBVA MÉXICO">
+                <a href="#"><img class="imgHam" src="../img/Ham.png" alt="Hamburguer"></a>
+                <img id="imgBell" src="../img/Bell.png" alt="Notificaciones">
+            </div>
+        </header>
+        <div class="contenedor">
+            <nav>
+                <div class="usuarioInfo">
+                    <img id="imgUsuario" src="../img/user-logo-wt.png" alt="Usuario">
+                    <h2>¡Bienvenido <span id="txtNombre"></span>!</h2>
+                    <h3>Administrador</h3>
+                </div>
+                <br><br>
+                <ul class="navItems">
+                    <li><a href="CandidatosRH.html">Lista de cadidatos</a></li>
+                    <br>
+                    <li><a href="">Agregar Candidato</a></li>
+                </ul>
+                <button class="logout" id="btnLogout" onclick="Logout()">
+                    <img src="../img/logout.png" alt="">
+                    <h4 class="logoutResponsive">Cerrar sesión</h4>
+                </button>
+            </nav>
+            <section class="main">
+                <article>
+                    <!-- formulario de entrevistados-->
+                    <form>
+
+                        <h1 class="nombre_candidato">Agregar candidato</h1>
+
+                        <label class="nombre">Nombre</label>
+                        <input type="text" class="campo" id="nombre" placeholder="Nombre" autocomplete="off">
+
+                        <label class="nombre">Posición</label>
+                        <input type="text" class="campo" id="posicion" placeholder="Posición" autocomplete="off">
+
+                        <label class="nombre">Entrevistador</label>
+                        <select class="campo" id="entrevistadores">
+                            <option>--Seleccionar opcion-</option>
+                        </select>
+
+                        <label class="nombre">Fecha entrevista</label>
+                        <input type="date" class="campo" id="fecha" placeholder="Fecha" autocomplete="off">
+
+                        <label class="nombre">Curriculum Vitae</label>
+                        <input type="file" class="campo_file" id="cv">
+
+                        <button type="submit" class="btn_guardar" id="btnGuardar">Guardar</button>
+                    </form>
+                    <!-- Aqui termina mi formulario-->
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+        <script src="../js/scriptRH.js"></script>
+</html>

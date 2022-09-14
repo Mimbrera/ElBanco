@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <title>El banco | Inicio</title>
+</head>
+
+<body>
+    <div class="responsive">
+        <header>
+            <div>
+                <img id="imgBBVA" src="../img/BBVA-logo.png" alt="BBVA MÉXICO">
+                <a href="#"><img class="imgHam" src="../img/Ham.png" alt="Hamburguer"></a>
+                <img id="imgBell" src="../img/Bell.png" alt="Notificaciones">
+            </div>
+        </header>
+        <div class="contenedor">
+            <nav>
+                <div class="usuarioInfo">
+                    <img id="imgUsuario" src="../img/user-logo-wt.png" alt="Usuario">
+                    <h2>¡Bienvenido <span id="txtNombre"></span>!</h2>
+                    <h3>Administrador</h3>
+                </div>
+                <br><br>
+                <ul class="navItems">
+                    <li class="liRH"><a href="Candidatos.html">Lista de cadidatos</a></li>
+                    <br>
+                    <li class="liRH"><a href="">Opciones</a></li>
+                </ul>
+                <button class="logout" id="btnLogout" onclick="Logout()">
+                    <img src="../img/logout.png" alt="">
+                    <h4 class="logoutResponsive">Cerrar sesión</h4>
+                </button>
+            </nav>
+            <section class="main">
+                <article>
+                    <!-- formulario de entrevistados-->
+                    <form>
+
+                        <h1 class="nombre_candidato">Frontend Developer - Alan Josue Lopez Lopez</h1>
+
+                        <label class="nombre">Experiencia</label>
+                        <input type="text" class="campo" id="experiencia" placeholder="Experiencia laboral" autocomplete="off">
+
+                        <label class="nombre">Tecnologias</label>
+                        <input type="text" class="campo" id="tecnologias" placeholder="Tecnologias y herramientas" autocomplete="off">
+
+                        <label class="nombre">Nivel del candidato</label>
+                        <select class="campo" id="nivel">
+                            <option></option>
+                           
+                        </select>
+                        <label class="nombre">¿Cumple con la vacante?</label>
+                        <br><br><br><br>
+                        <div class="container_radio">
+                            <input type="radio" name="radio" value="Si" id="vacante">
+                            <label for="si">Si</label>
+                            <input type="radio" name="radio" value="No" id="vacante">
+                            <label for="no">No</label>
+                        </div><br>
+                        <label class="nombre">Observaciones</label>
+                        <textarea class="campo_observacion" id="observacion" placeholder="Observaciones y comentarios" autocomplete="off"></textarea>
+                        
+                        <button type="submit" class="btn_expediente" id="btnSubirExpediente">Subir expediente</button>
+                    </form>
+                    <!-- Aqui termina mi formulario-->
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="../js/scriptEntrevistador.js"></script>
+</html>

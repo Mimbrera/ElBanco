@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/candidatos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/LlenadoTabla.js"></script>
+    <script src="../js/BuscarBarra.js"></script>
+    <script src="../js/Ordenar.js"></script>
+    <title>El Banco | Entrevistadordjndnfdk</title>
+
+</head>
+
+<body>
+
+    <div class="responsive">
+
+        <header>
+            <div>
+                <a href="#"><img id="imgBBVA" src="../img/BBVA-logo.png" alt="BBVA MÉXICO"></a>
+                <a href="#"><img id="imgHam" src="../img/Ham.png" alt="Hamburguer"></a>
+                <a href="#"><img id="imgBell" src="../img/Bell.png" alt="Notificaciones"></a>
+            </div>
+        </header>
+
+        <div class="contenedor">
+
+            <nav>
+
+                <div class="usuarioInfo">
+                    <img id="imgUsuario" src="../img/user-logo-wt.png" alt="Usuario">
+                    <h2>¡Bienvenido <span id="txtNombre"></span>!</h2>
+                    <h3>Administrador</h3>
+                </div>
+
+                <br><br>
+
+                <ul class="navItems">
+                    <li class="liRH"><a href="">Lista de Candidatos</a></li>
+                    <br>
+                    <li class="liRH"><a href="Formulario.html">Opciones</a></li>
+                </ul>
+
+                <button class="logout" id="btnLogout" onclick="Logout()">
+                    <img src="../img/logout.png" alt="">
+                    <h4 class="logoutResponsive">Cerrar sesión</h4>
+                </button>
+
+            </nav>
+
+            <section class="main">
+                <article>
+
+                    <section id="candidatos_menu">
+                        
+                        <div class="candidatostxt">
+                            <h2>Candidatos</h2>
+                        </div>
+
+                        <div class="wrapper">
+                            <img class="search-icon" src="../img/lupa.png" />
+                            <input class="search" type="search" name="search_box" placeholder="Buscar candidato...">
+                        </div>
+
+                    </section>
+
+                    <section id="candidatos_section">
+
+                        <table id="tab_candidatos">
+                            <thead>
+                                <tr>
+                                    <th class="colnom">Nombre<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="colpos">Posicion<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="tabmobil colreg">Registro<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="tabmobil colest">Estatus<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th>
+                                        <!-- Botones -->
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody1">
+                                <tr>
+                                    <th>Alan Josue López López</th>
+                                    <td>Frontend Developer</td>
+                                    <td class="tabmobil">22/08/2022</td>
+                                    <td class="tabmobil">Por revisar</td>
+                                    <td><button class="button_candidatos" type="submit"><img src="../img/ojo.png" />
+                                            <span class="btnText">Ver perfil</span> </button></td>
+                                </tr>
+                                <tr>
+                                    <th>Jorge Aguilar Hernandez</th>
+                                    <td>Frontend Developer</td>
+                                    <td class="tabmobil">25/08/2022</td>
+                                    <td class="tabmobil">Por revisar</td>
+                                    <td><button class="button_candidatos" type="submit"><img src="../img/ojo.png" />
+                                        <span class="btnText">Ver perfil</span> </button></td>
+                                </tr>
+                                <tr>
+                                    <th>Set Reyes Sandoval</th>
+                                    <td>Frontend Developer</td>
+                                    <td class="tabmobil">20/08/2022</td>
+                                    <td class="tabmobil">En revisión</td>
+                                    <td><button class="button_candidatos" type="submit"><img
+                                                src="../img/lapiz.png" /> <span class="btnText">Editar</span> </button></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </section>
+
+                    <br />
+
+                </article>
+            </section>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

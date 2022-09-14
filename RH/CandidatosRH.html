@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/candidatos.css" />
+    <script src="../js/sidebar.js"></script>
+    <title>El Banco | Recursos Humanos</title>
+
+</head>
+
+<body>
+
+    <div class="responsive">
+
+        <header>
+            <div>
+                <a href="#"><img id="imgBBVA" src="../img/BBVA-logo.png" alt="BBVA MÉXICO"></a>
+                <a href="#"><img id="imgHam" src="../img/Ham.png" alt="Hamburguer"></a>
+                <a href="#"><img id="imgBell" src="../img/Bell.png" alt="Notificaciones"></a>
+            </div>
+        </header>
+
+        <div class="contenedor">
+
+            <nav>
+
+                <div class="usuarioInfo">
+                    <img id="imgUsuario" src="../img/user-logo-wt.png" alt="Usuario">
+                    <h2>¡Bienvenido <span id="txtNombre"></span>!</h2>
+                    <h3>Administrador</h3>
+                </div>
+
+                <br><br>
+
+                <ul class="navItems">
+                    <li class="liRH"><a href="">Lista de Candidatos</a></li>
+                    <br>
+                    <li class="liRH"><a href="formulario.html">Agregar Candidato</a></li>
+                </ul>
+
+                <button class="logout" id="btnLogout" onclick="Logout()">
+                    <img src="../img/logout.png" alt="">
+                    <h4 class="logoutResponsive">Cerrar sesión</h4>
+                </button>
+
+            </nav>
+
+            <section class="main">
+                <article>
+
+                    <section id="candidatos_menu">
+                        
+                        <div class="candidatostxt">
+                            <h2>Candidatos</h2>
+                        </div>
+
+                        <div class="wrapper">
+                            <img class="search-icon" src="../img/lupa.png" />
+                            <input class="search" type="search" name="search_box" placeholder="Buscar candidato...">
+                        </div>
+
+                    </section>
+
+                    <section id="candidatos_section">
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <table id="tab_candidatos">
+                            <thead>
+                                <tr>
+                                    <th class="txt_en1">Nombre<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="tabmobil1">Posicion<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="txt_en2">Entrevistador<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="txt_en3">Estatus<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th class="tabmobil2">Fecha<img class="flecha" src="../img/triangulo2.png" /></th>
+                                    <th>
+                                        <!-- Botones -->
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody2">
+                                <tr id="fila0" class="delete_fila">
+                                    <th></th>
+                                    <td class="tabmobil"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="tabmobil"></td>
+                                    <td><button class="bote" type="button" onclick="eliminarFila(1);"><img id="imagenBote" src="../img/eliminar.png" /></button></td>      
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </section>
+
+                    <br />
+
+                </article>
+            </section>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../js/apiCandidatosRH.js"></script>
+    <script src="../js/buscador2.js"></script>
+    <script src="../js/ordenarCandidatosRH.js"></script>
+    <script src="../js/eliminar.js"></script>
+</body>
+
+</html>

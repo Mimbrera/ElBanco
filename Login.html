@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+    <title>El banco | Login</title>
+</head>
+<body>
+    <header>
+        <a href="https://www.bbva.mx/"><img id="BBVAlink" src="img/BBVA-logo.png" alt="BBVA MÉXICO"></a>
+    </header>
+
+    <h1>Login</h1>
+    
+    <div class="container">
+        <div class="left">
+            <form id="login" action="">
+                <img class="imgUser" src="img/usario-logo.png" alt="Usuario"><br>
+                <label for="user">Email</label><br>
+                <input type="text" name="user" id="user" placeholder="Email"><br>
+                <label for="pass">Contraseña</label><br>
+                <input type="password" name="pass" id="pass" placeholder="********"><br>
+                <button id="btnInicio" class="button" onclick="validateLogin()">Ingresar</button>
+            </form>
+        </div>
+        <div class="right">
+            <img id="login" src="img/login-bg.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

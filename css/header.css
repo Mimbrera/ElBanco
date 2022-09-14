@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 99%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #006EC1;
+    height: 8vh;
+}
+
+#imgBBVA{
+    float: left;
+    height: 6vh;
+    padding: 1vh;
+}
+
+#imgBell{
+    float: right;
+    align-content: flex-end;
+    height: 4vh;
+    padding: 2vh;
+}
+
+.contenedor {
+    display: flex;
+    height: 92vh;
+}
+
+nav {
+    width: 15%;
+    min-width: 106px;
+    float: left;
+    background-color: #2C93E0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.usuarioInfo, .logout{
+    transform: translateY(1vw);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.usuarioInfo img{
+    width: 8vw;
+    min-width: 70px;
+    border-radius: 50%;
+    border: 7px solid #FFFFFF;
+}
+
+.navItems{
+    vertical-align: middle;
+}
+
+.navItems li{
+    color: #FFFFFF;
+    height: 50px;
+    background-color: #0F74BE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+}
+
+.logout img{
+    height: 4vh;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.main {
+    width: 85%;
+    float: left;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
+

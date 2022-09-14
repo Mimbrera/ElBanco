@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/graficos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <title>El banco | Gráficos</title>
+</head>
+<body>
+    <div class="responsive">
+        <header>
+            <div>
+                <img id="imgBBVA" src="../img/BBVA-logo.png" alt="BBVA MÉXICO">
+                <img id="imgBell" src="../img/Bell.png" alt="Notificaciones">
+            </div>
+        </header>
+        <div class="contenedor">
+            <nav>
+
+                <div class="usuarioInfo">
+                    <img id="imgUsuario" src="../img/user-logo-wt.png" alt="Usuario">
+                    <h2>¡Bienvenido <span id="txtNombre"></span>!</h2>
+                    <h3>Administrador</h3>
+                </div>
+
+                <br><br>
+
+                <ul class="navItems">
+                    <li><button class="submenu" onclick="SubmenuAdmin()"><img src="../img/triangulo.png" alt="">Admin</button></li>
+                    <li class="admin" style="display: none; background-color: #52BCEC;">
+                        <a href="VistaGeneral.html"><img src="../img/dashboard.png" alt="">Dashboard</a>
+                    </li>
+                    <li class="admin" style="display: none; background-color: #52BCEC;">
+                        <a href=""><img src="../img/grafico.png" alt="">Grafico</a>
+                    </li>
+                    <br>
+                    <li><button class="submenu" onclick="SubmenuRH()"><img src="../img/triangulo.png" alt="">RH</button></li>
+                    <li class="RH" style="display: none; background-color: #52BCEC;">
+                        <a href="Candidatos.html"><img src="../img/dashboard.png" alt="" style="width: 10%;">Lista de candidatos</a>
+                    </li>
+                </ul>
+
+                <button class="logout" id="btnLogout" onclick="Logout()">
+                    <img src="../img/logout.png" alt="">
+                    <h4 class="logoutResponsive">Cerrar sesión</h4>
+                </button>
+                
+            </nav>
+            <section class="main">
+                <article class="top">
+                    <h2 id="txtCantidad">Cantidad</h2>
+                    <h2 id="txtGraficos">Gráficos</h2>
+                    <canvas id="myChart2"></canvas>
+                </article>
+                <article class="down">
+                    <canvas id="myChart"></canvas>
+                </article>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+    <script src="../js/graficos.js"></script>
+    <script src="../js/graficoPastel.js"></script>
+</body>
+
+</html>

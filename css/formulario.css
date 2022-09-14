@@ -1,0 +1,222 @@
+/*Desde aqui comienza el codigo de mi seccion del formulario*/
+
+* {
+    font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+form {
+    margin-bottom: 2vh;
+}
+
+.nombre_candidato {
+    position: relative;
+    width: 798px;
+    height: 23px;
+    left: 50px;
+    top: 30px;
+    font-size: 24px;
+    padding-bottom: 35px;
+    line-height: 28px;
+    color: #000000;
+}
+
+
+/* Nombre del label*/
+.nombre {
+    position: relative;
+    left: 0%;
+    right: 0%;
+    left: 50px;
+    top: 30px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.campo {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+    height: 48px;
+    width: 668px;
+    left: 0%;
+    right: 0%;
+    left: 50px;
+    top: 30px;
+    text-indent: 10px;
+    background: #FFFFFF;
+    border: 1px solid #070708;
+    border-radius: 5px;
+}
+
+
+.campo_observacion {
+    position: relative;
+    display: flex;
+    margin-bottom: 70px;
+    height: 163px;
+    width: 668px;
+    left: 0%;
+    right: 0%;
+    left: 50px;
+    top: 50px;
+    text-indent: 10px;
+    background: #FFFFFF;
+    border: 1px solid #070708;
+    border-radius: 5px;
+}
+
+.campo_file {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+    height: 48px;
+    width: 668px;
+    left: 0%;
+    right: 0%;
+    left: 50px;
+    top: 50px;
+    border: 0;
+    background: #F5F5F5;
+    border: none;
+
+
+}
+
+.btn_expediente {
+    position: relative;
+    width: 148px;
+    height: 48px;
+    left: 572px;
+    background: #006EC1;
+    border: 1px solid #006EC1;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.btn_expediente:hover {
+    background: #2C93E0;
+    border: none;
+}
+
+.btn_guardar {
+    position: relative;
+    width: 148px;
+    height: 48px;
+    left: 50px;
+    top: 30px;
+    margin-bottom: 30px;
+    background: #006EC1;
+    border: 1px solid #006EC1;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.btn_guardar:hover {
+    background: #2C93E0;
+    border: none;
+}
+
+.btn_radio {
+    position: relative;
+    display: flex;
+    float: left;
+    height: 20px;
+    width: 20px;
+    left: 50px;
+    top: 50px;
+}
+
+.container_radio {
+    padding-left: 70px;
+    height: 0px;
+
+}
+.imgHam {
+    float: right;
+    align-content: flex-end;
+    height: 4vh;
+    padding: 2vh;
+}
+
+@media only screen and (max-width: 976px) {
+    .campo {
+        width: 80%;
+    }
+
+    .campo_observacion {
+        width: 80%;
+    }
+
+    .campo_file {
+        width: 80%;
+    }
+
+    .nombre_candidato {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .btn_expediente {
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .btn_expediente {
+        left: 55%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .btn_expediente {
+        left: 52%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .nombre_candidato {
+        padding-bottom: 100px;
+    }
+
+    .btn_expediente {
+        left: 36%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .nombre_candidato {
+        padding-bottom: 90px;
+    }
+
+    .btn_expediente {
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .nombre_candidato {
+        padding-bottom: 110px;
+    }
+
+    .btn_expediente {
+        left: 35%;
+    }
+
+    
+}
+
+@media screen and (min-width: 800px) {
+    .imgHam{
+        display: none;
+    }
+}
