@@ -47,7 +47,7 @@ function mostrarHTML(usuario) {
         const { name, website, address, company } = users;
         html +=`
             <tr>
-                <th>${name}</th>
+                <td>${name}</td>
                 <td>${website}</td>
                 <td class="tabmobil">${address.street}</td>
                 <td class="tabmobil">${address.geo.lng}</td>

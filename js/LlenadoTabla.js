@@ -56,7 +56,7 @@ function mostrarHTML(users) {
                 <td>${website}</td>
                 <td class="tabmobil">${username}</td>
                 <td class="tabmobil">${email}</td>
-                <td><button class="button_candidatos" type="submit"><img src="../img/ojo.png" />Ver perfil </button></td>
+                <td><button class="button_candidatos" type="submit"><img src="../img/ojo.png" />Ver <span class="tabmobil">perfil</span> </button></td>
             </tr>
         `;
 

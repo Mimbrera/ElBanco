@@ -20,6 +20,7 @@ body {
 header {
     background-color: #006EC1;
     height: 8vh;
+    width: 100%;
 }
 
 #imgBBVA {
@@ -38,7 +39,6 @@ header {
 
 .contenedor {
     display: flex;
-    width: 100vw;
     height: 92vh;
 
 }
@@ -70,7 +70,7 @@ nav {
     vertical-align: middle;
 }
 
-.navItems button {
+.navItems button, .liRH {
     background-color: #0F74BE;
     width: -webkit-fill-available;
 }
@@ -85,6 +85,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .Admin, .RH {
@@ -149,8 +150,7 @@ a {
 
 /*CANDIDATES*/
 
-#candidatos_menu,
-#candidatos_menu2 {
+#candidatos_menu {
     display: flex;
     width: 100%;
     height: 100%;
@@ -162,9 +162,7 @@ a {
 }
 
 .candidatostxt{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    width: 50%;
 }
 
 .wrapper {
@@ -181,7 +179,9 @@ a {
 
     display: flex;
     align-items: center;
+}
 
+.wrapper {
     width: 40%;
     min-width: 100px;
 }
@@ -190,12 +190,12 @@ a {
     width: 14px;
 }
 
+
 /*TABLES*/
 
-.col1:hover, .col2:hover,
-.col3:hover, .col4:hover,
-.col5:hover, .col6:hover,
-.col7:hover{
+.txt_en1:hover, .tabmobil1:hover,
+.txt_en2:hover, .txt_en3:hover,
+.tabmobil2:hover{
     cursor: pointer;
 }
 
@@ -211,7 +211,16 @@ a {
     border-collapse: collapse;
 }
 
-#tab_candidatos tbody {
+.colnom:hover, .colpos:hover,
+.colreg:hover, .colest:hover {
+    cursor: pointer;
+}
+
+#tab_candidatos .tbody1 {
+    background-color: #DADADA;
+}
+
+#tab_candidatos .tbody2 {
     background-color: #DADADA;
 }
 
@@ -221,64 +230,60 @@ td {
     border-bottom: 2px solid #fff;
     text-align: left;
     padding-left: 30px;
-    contain: content;
- 
+    contain: strict;
+    vertical-align: middle;
 }
 
-#tab_candidatos .flecha{
+#tab_candidatos .flecha {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 3%;
-    height: 3%;
+    width: 10%;
     padding-bottom: 2px;
     padding-left: 2px;
 }
 
-#tab_candidatos button img {
+#tab_candidatos .button_candidatos img {
     width: 22px;
-    height: 10px;
+    height: 18px;
 
     margin-right: 10%;
 }
 
-
-#tab_candidatos button {
+#tab_candidatos .button_candidatos {
     text-decoration: none;
-    border: none;
-
-    background: #0F74BE;
-    border-radius: 20px;
-
-    height: 70%;
-    width: 100%;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.button_candidatos {
-    text-decoration: none;
-    color: #FFFFFF;
     border: none;
 
     background: #0F74BE;
     border-radius: 20px;
 
     height: 39px;
-    width: 142px;
+    width: 8vw;
+
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
 
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#tab_candidatos button:hover,
-.button_candidatos:hover {
-    background: #2C93E0;
+#imagenBote{
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+}
+.bote {
+    width: 30px;
+    height: 30px;
 }
 
-#tab_candidatos button:active,
-.button_candidatos:active {
+#tab_candidatos button:hover {
+    cursor: pointer;
+}
+
+#tab_candidatos button:active {
     transform: scale(0.95);
 }
 
@@ -290,25 +295,24 @@ td {
     transform: scale(0.95);
 }
 
-.btn_candidatos{
-    width: 50%;
-    margin-left: 50px;
+@media screen and (max-width: 1224px) {
+    .btnText {
+        display: none;
+    }
 }
-
-.btn_candidatos .button_candidatos img{
-    width: 15px;
-    height: 15px;
-
-    margin-right: 10%;
+@media screen and (max-width: 500px) {
+    .delete_fila {
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
 
-    #tab_candidatos button {
+    #tab_candidatos .button_candidatos {
         text-decoration: none;
         border: none;
 
-        background: #0F74BE;
         border-radius: 20px;
 
         height: 70%;
@@ -323,6 +327,10 @@ td {
         margin-bottom: 10px;
     }
 
+    #tab_candidatos .tabmobil1 .tabmobil2 {
+        display: none;
+    }
+
     .responsive .contenedor nav {
         display: none;
     }
@@ -333,7 +341,8 @@ td {
     }
 
     #tab_candidatos {
-        display: none;
+        position: relative;
+        right: 35px;
     }
 
     #candidatos_section {  
@@ -341,8 +350,7 @@ td {
         margin: 0px 0px 0px 50px;
     }
 
-    #candidatos_menu,
-    #candidatos_menu2{
+    #candidatos_menu{
         display: flex;
         flex-direction: row;
         flex-flow: wrap;
@@ -350,8 +358,6 @@ td {
     }
 
     .candidatostxt{
-        display: flex;
-        justify-content: left;
         width: 100%;
     }
 
@@ -360,7 +366,7 @@ td {
         min-width: 100px;
     }
 
-    #candidatos_menu2 input {
+    #candidatos_menu input {
         border: 1px solid rgb(212, 212, 212);
         border-radius: 5px;
         
@@ -373,22 +379,38 @@ td {
         border-radius: 20px;
     }
 
-    .btn_candidatos .button_candidatos{
+    .search-icon {
+        top: 25vh;
+        left: 8vw;
+    }
+
+    .txt_en1 .txt_en2 .txt_en3{
+        font-size: 13px;
+        
+    }
+    #imagenBote{
         display: none;
     }
 
-    .search-icon {
-        position: absolute;
-        top: 165px;
-        right: 350px;
-        width: 14px;
-    
+    .contenedor {
+        width: 100%;
+        height: 100%;
     }
-    
+
     .main{
         width: 100%;
         height: 100%;
     }
+
+    #tab_candidatos tbody{
+        display: none;
+    }
+
+    .tabmobilhead{
+        display: none;
+    }
+    
+
 }
 
 @media screen and (min-width: 800px) {
